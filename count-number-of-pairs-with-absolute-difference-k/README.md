@@ -1,3 +1,4 @@
+[Discussion Post (created on 1/9/2021 at 12:10)](https://leetcode.com/problems/count-number-of-pairs-with-absolute-difference-k/discuss/1496744/Simple-C%2B%2B-.-Faster-than-78)  
 <h2>2006. Count Number of Pairs With Absolute Difference K</h2><h3>Easy</h3><hr><div><p>Given an integer array <code>nums</code> and an integer <code>k</code>, return <em>the number of pairs</em> <code>(i, j)</code> <em>where</em> <code>i &lt; j</code> <em>such that</em> <code>|nums[i] - nums[j]| == k</code>.</p>
 
 <p>The value of <code>|x|</code> is defined as:</p>
