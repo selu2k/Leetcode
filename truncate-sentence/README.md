@@ -1,3 +1,4 @@
+[Discussion Post (created on 8/9/2021 at 16:6)](https://leetcode.com/problems/truncate-sentence/discuss/1510375/C%2B%2B-simple-iteration-.-100)  
 <h2>1816. Truncate Sentence</h2><h3>Easy</h3><hr><div><p>A <strong>sentence</strong> is a list of words that are separated by a single space with no leading or trailing spaces. Each of the words consists of <strong>only</strong> uppercase and lowercase English letters (no punctuation).</p>
 
 <ul>
