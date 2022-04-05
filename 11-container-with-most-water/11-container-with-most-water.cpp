@@ -15,3 +15,7 @@ public:
         return water;
     }
 };
+// we take two pointers one at start and other at the end.
+// then we traverse the array finding the water storage amount
+// Now we will increment/decrement the pointer that is lesser in height
+// so that we keep the longer pointer
