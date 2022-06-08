@@ -1,6 +1,6 @@
 class Solution {
 public:
-    // int findKthPositive(vector<int>& arr, int k) {
+     int findKthPositive(vector<int>& arr, int k) {
     //     int n = arr.size();
     //     int num=0;
     //     int j = 0;
@@ -21,8 +21,15 @@ public:
     //     }
     //     return 0;
     // }
-    int findKthPositive(vector<int>& arr, int k) {
-        for (auto a : arr) if (a <= k) k++;
-        return k;
+    // int findKthPositive(vector<int>& arr, int k) {
+    //     for (auto a : arr) if (a <= k) k++;
+    //     return k;
+    // }
+    for (int n = 1, i = 0; n <= 1000; ++n) {
+        if (i < arr.size() && arr[i] == n)
+            ++i;
+        else if (--k == 0)
+            return n;
     }
+    return 1000 + k;}
 };
