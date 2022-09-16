@@ -4,7 +4,7 @@ public:
     int maximumScore(vector<int>& nums, vector<int>& mul) {
         int n = nums.size();
         int m = mul.size();
-        dp.resize(1001,vector<int>(1001,INT_MIN));
+        dp.resize(1001,vector<int>(1001,INT_MIN));  // int min is important, otherwise messing with test case if given 0 , i.e dp not working and we get tle
         int score = helper(nums,mul,0,n-1,0);
         return score;
     }
