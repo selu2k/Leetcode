@@ -112,6 +112,7 @@ public:
 //         }
         
 //         return res;
+        //same but optimized;
         d = 'L' + d + 'R';
         string res = "";
         for (int i = 0, j = 1; j < d.length(); ++j) {
