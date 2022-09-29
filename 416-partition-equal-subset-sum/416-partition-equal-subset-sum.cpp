@@ -1,6 +1,6 @@
 class Solution {
 public:
-    int8_t dp[10001] = {[0 ... 10000] = -1};
+    vector<int> dp;
     bool canPartition(vector<int>& nums) {
         int n = nums.size();
         int sum = 0;
@@ -8,11 +8,12 @@ public:
             sum += i;
         }
         if(sum%2!=0) return false;
+        dp.resize(sum+1,-1);
         sort(nums.begin(),nums.end());
-        bool flag = helper(nums,0,0,sum/2);
-        return flag;
+        return  helper(nums,0,0,sum/2);
         
-        
+        // to divide the array into 2, its sum should be even
+        // next we can use dp to check if current sum is possible or not;
     }
     bool helper(vector<int>nums,int i,int cursum,int tar){
         if( i>=nums.size() || cursum + nums[i] > tar) return false;
